@@ -1,4 +1,8 @@
-const siteURL = "https://css-tricks.com"
+const siteURL = "http://www.iheartproducers.com/"
+
+ 
+
+// const siteURL = "https://css-tricks.com"
 
 export const state = () => ({
   posts: [],
@@ -36,6 +40,7 @@ export const actions = {
         }))
 
       commit("updatePosts", posts)
+      console.log(posts)
     } catch (err) {
       console.log(err)
     }
